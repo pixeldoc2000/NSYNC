@@ -28,7 +28,7 @@ void setup() {
   //this prints all the available MIDI ports 
   MidiBus.list(); 
   
-  //select the MIDI port of your preference
+  //select the MIDI port to receive the MIDI clock (look at MidiBus.list() output in console)
   //in my case port 0 named "Bus 1"
   myBus = new MidiBus(this, 0, "Bus 1"); 
 }
